@@ -4,8 +4,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
-import os
 import time
 import math
 
@@ -30,9 +28,6 @@ try:
     btn.click()
 
 finally:
-    # успеваем скопировать код за 30 секунд
+    # успеваем скопировать код за 10 секунд
     time.sleep(10)
-    # закрываем браузер после всех манипуляций
     browser.quit()
-
-# не забываем оставить пустую строку в конце файла
